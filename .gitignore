@@ -1,0 +1,24 @@
+# Training output. The scripts create models/runs/<MODEL_ID>/ at runtime and
+# write checkpoints, temporary models and metrics_file.txt there. It is not
+# part of the release and can grow to tens of GB.
+runs/
+
+# Model weights, wherever they land.
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Slurm / scheduler logs
+slurm-*.out
+job.out.*
+job.err.*
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
