@@ -64,7 +64,8 @@ DEMO_MODE = True     # small demo set
 ```
 
 Set `DEMO_MODE = False`, or delete the block, to train on the full dataset with
-the published settings. Nothing outside that block refers to the demo.
+the published settings, and point `DATA_DIR` at your own data. Nothing outside
+that block refers to the demo.
 
 Training writes to `models/runs/<MODEL_ID>/`, keeps the best model by `val_loss`
 and rolls back after `NHOLD` bad epochs.

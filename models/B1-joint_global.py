@@ -31,7 +31,10 @@ from tqdm import tqdm
 MODEL_ID = "B1"
 
 # --- Input data -------------------------------------------------------------
-DATA_DIR = "/ptmp/saba/find_lens_LSTM2/stored_sets/Not_normalized/26Feb26/FIMN_clip-1_min_subtract_pad0/Transformer_data"
+# Edit the path below to point at your own data for a real run. See load_split()
+# and the bundled demo data for the required input structure, or adapt the
+# loading block to your data.
+DATA_DIR = "path/to/the/input/data"
 
 # --- Architecture -----------------------------------------------------------
 D_MODEL  = 256
